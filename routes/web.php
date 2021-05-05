@@ -18,6 +18,10 @@ Route::get('/', function () {
 });
 
 Route::get('/partials/miolink', function () {
-    return view('partials.miolink');
+    $data = [
+        'text' => 'Pagina "MIO LINK"',
+        'lista' => 'elemento '
+    ];
+    return view('partials.miolink',$data);
 });
 

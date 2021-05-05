@@ -80,8 +80,16 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    PAGINA "MIO LINK"
+                <div class="m-b-md">
+                    {{$text}}
+                    <ul>
+                        <h4>Lista a caso</h4>
+                        @for ($i = 0; $i < 5; $i++)
+                            <li>
+                                {{$lista . $i}}
+                            </li>
+                        @endfor
+                    </ul>
                 </div>
             </div>
         </div>
